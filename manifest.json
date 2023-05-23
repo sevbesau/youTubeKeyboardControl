@@ -1,0 +1,21 @@
+{
+    "name": "YouControl",
+    "description": "Youtube keyboard/remote control",
+    "version": "0.1",
+    "manifest_version": 2,
+    "permissions": [],
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": [
+            "src/settings.js", 
+            "src/util.js",
+            "src/cursor.js",
+            "src/youtube.js", 
+            "src/content.js"
+        ]
+      }
+    ],
+    "web_accessible_resources": []
+  }
+  
